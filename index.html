@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wather</title>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="top">
+        <!-- <div class="title-main"><span>CURRENT WEATHER</span></div> -->
+        <div class="search">
+            <div class="col s5">
+                <b>Search login on GitHub:&nbsp;&nbsp;</b>
+                <div class="input-field">
+                    <input id="search" name="login" type="search" required="required" minlength="3"/>
+                    <label for="search">Enter login</label>
+                </div>
+            </div>
+            <a class="btn-floating btn-small waves-effect waves-light teal lighten-2" onclick="getData()">
+                <i class="material-icons">search</i>
+            </a>
+        </div>
+        <hr/>
+    </div>
+    <div id="result"></div>
+    <!-- <img src="https://openweathermap.org/img/wn/${dataFromServer.weather[0].icon}@2x.png" alt=""> -->
+    <script src="js/index.js"></script>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+  </body>
+</html>
